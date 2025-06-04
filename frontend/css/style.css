@@ -1,0 +1,104 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1d3557, #457b9d);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+    }
+
+    /* Container */
+    .login-container {
+      width: 100%;
+      max-width: 400px;
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .login-container:hover {
+      transform: translateY(-3px);
+    }
+
+    /* Heading */
+    .login-box h2 {
+      font-size: 26px;
+      color: #1d3557;
+      margin-bottom: 10px;
+    }
+
+    .login-box p {
+      font-size: 14px;
+      color: #6c757d;
+      margin-bottom: 20px;
+    }
+
+    /* Inputs */
+    .login-box input {
+      width: 100%;
+      padding: 14px 16px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .login-box input:focus {
+      border-color: #1d3557;
+      box-shadow: 0 0 0 3px rgba(29, 53, 87, 0.1);
+      outline: none;
+    }
+
+    /* Button */
+    .login-box button {
+      width: 100%;
+      padding: 14px;
+      background: #1d3557;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-box button:hover {
+      background-color: #457b9d;
+    }
+
+    /* Error Text */
+    .error-text {
+      color: #e63946;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    /* Optional: Smooth fade-in animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .login-container {
+      animation: fadeIn 0.5s ease-in-out;
+    }
